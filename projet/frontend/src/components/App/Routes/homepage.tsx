@@ -1,5 +1,4 @@
 import Header from "../../Header/header";
-import '../../../styles/_home.sass'
 
 function Homepage() {
     return (
