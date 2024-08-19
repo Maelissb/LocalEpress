@@ -1,3 +1,4 @@
+import Homepage from "./components/App/ui/homepage";
 import Header from "./components/Header/header";
 
 function App() {
