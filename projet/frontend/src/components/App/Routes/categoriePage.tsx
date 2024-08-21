@@ -1,12 +1,13 @@
 import Title from "../../title";
-import Cards from "../ui/categorieCard";
+import Cards from "../content/Card/categorieCard";
+import ProductList from "../content/Products/ProductList";
 
 function Categorie(){
     return(
         <div>
             <Title/>
             <div>
-                <Cards />
+                <ProductList />
             </div>
         </div>
     )

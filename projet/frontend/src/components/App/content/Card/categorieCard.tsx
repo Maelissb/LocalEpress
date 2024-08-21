@@ -1,4 +1,6 @@
-
+interface Card {
+    
+}
 function Cards(){
     return(
         <div>
