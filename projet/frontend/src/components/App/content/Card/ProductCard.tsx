@@ -47,11 +47,15 @@ const ProductCard: React.FC<ProductCardProps> = ({ product }) => {
 
   const openModal = () => setShowModal(true);
   const closeModal = () => setShowModal(false);
+//   const handleAddToCart = () => {
+//     // Implémentez la logique pour ajouter au panier ici
+//     console.log(`Produit ajouté au panier: ${product.title}`);
+//   };
 
   return (
     <article className="product_card" onClick={openModal}>
-      <img src={product.thumbnail} alt={product.title} />
       <h2>{product.title}</h2>
+      <img src={product.thumbnail} alt={product.title} />
       <p>Prix: ${product.price}</p>
       <p>Catégorie: {product.category}</p>
       {showModal && <ProductModal product={product} onClose={closeModal} />}

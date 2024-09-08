@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import "../../../../styles/_product.sass"
 import ProductCard from '../Card/ProductCard'; // Assurez-vous que le chemin est correct vers le fichier ProductCard
+import "../../../../styles/_product.sass"; // Utiliser les styles appropriés
 
 type Product = {
   id: number;
@@ -41,6 +42,7 @@ function ProductList() {
           <ProductCard key={product.id} product={product} />
         ))}
       </div>
+        <button>ajouter</button>
     </div>
   );
 }
