@@ -1,5 +1,5 @@
 import Title from "../../title";
-import Cards from "../content/Card/categorieCard";
+import Cards from "../content/Card/ProductCard";
 import ProductList from "../content/Products/ProductList";
 
 function Categorie(){

@@ -1,4 +1,27 @@
 import React, { useEffect, useState } from 'react';
+import "../../../../styles/_product.sass"
+import ProductCard from '../Card/ProductCard'; // Assurez-vous que le chemin est correct vers le fichier ProductCard
+
+type Product = {
+  id: number;
+  title: string;
+  description: string;
+  price: number;
+  discountPercentage: number;
+  rating: number;
+  stock: number;
+  brand: string;
+  category: string;
+  thumbnail: string;
+  images: string[];
+};
+
+type ProductsResponse = {
+  products: Product[];
+  total: number;
+  skip: number;
+  limit: number;
+};
 
 function ProductList() {
   const [products, setProducts] = useState<Product[]>([]);
@@ -13,18 +36,9 @@ function ProductList() {
   return (
     <div>
       <h1>Liste des Produits</h1>
-      <div>
+      <div className="product-list">
         {products.map(product => (
-          <div key={product.id} >
-            <img src={product.thumbnail} alt={product.title} />
-            <h2>{product.title}</h2>
-            <p>Description: {product.description}</p>
-            <p>Prix: ${product.price}</p>
-            <p>Catégorie: {product.category}</p>
-            <p>Stock: {product.stock}</p>
-            <p>Évaluation: {product.rating}</p>
-            <p>Marque: {product.brand}</p>
-          </div>
+          <ProductCard key={product.id} product={product} />
         ))}
       </div>
     </div>
