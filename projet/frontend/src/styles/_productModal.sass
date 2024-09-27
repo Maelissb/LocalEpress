@@ -1,0 +1,27 @@
+$color1: #C37174
+$color2: #D29A66
+
+.modal-content
+  position: relative
+  background: linear-gradient(to bottom, $color1, $color2) 
+  padding: 20px
+  border-radius: 8px 
+  max-width: 500px 
+  width: 90% 
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5) // Ombre pour un effet d'élévation
+
+h2
+  margin-top: 0 // Éliminer le margin par défaut en haut
+
+.close-btn
+  position: absolute
+  top: 10px // Positionnement du bouton de fermeture
+  right: 10px
+  cursor: pointer 
+  z-index: 1001 
+  background: none // Pas de fond pour le bouton
+  border: none // Pas de bordure
+  color: #000
+  font-size: 20px // Taille de la croix
+
+
